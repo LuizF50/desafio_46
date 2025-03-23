@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida Espacial dos Funny Aliens 🚀👽</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀Corrida Espacial</h1>
+        <p>O ponto de partida é a Terra! 🌎</p>
+        <p>🎮 Informações sobre as Naves:</p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>🛸 Nave</th>
+                    <th>🚀 Velocidade (% da luz)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Júpiter 2</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Millenium Falcon</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>USS Enterprise</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="form">
+            <label for="distancia">🛸 Informe a distância da corrida em anos-luz:</label><br>
+            <input type="text" id="distancia" required pattern="[0-9]*[.,]?[0-9]*"><br>
+
+            <button class="glow-on-hover" type="submit">Calcular Tempo ⏳</button>
+        </form>
+
+        <div id="erro-container"></div>
+        <div id="resultado"></div>
+
+        <footer class="footer">
+            🌌 "O tempo e o espaço são modos pelos quais pensamos e não condições nas quais vivemos." (Albert Einstein)
+            🛸
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
